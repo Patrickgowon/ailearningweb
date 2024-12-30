@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash-board</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-white top-0 px-4 w-[100%] h-15 shadow-xl flex justify-between items-center fixed ">
+        <div class="flex gap-3 items-center py-3 container">
+             <p class="text-2xl font-bold text-gray-700">Ai Tutor</p>
+             <i class="fas fa-bars text-2xl text-gray-700 bars md:hidden"></i>
+        </div>
+        <div class="flex gap-5 w-5/12 items-center">
+             <input type="text" placeholder="Search Here...." class="my-1 w-full rounded px-2 ring-1" >
+             <i class="fas fa-bell text-xl text-gray-700"></i>
+             <div class="">
+                 <i class="fas fa-envelope text-xl text-gray-700"></i>
+             </div>
+        </div>
+    </div>
+    <div class="px-4">
+        <div class="w-full bg-gray-100 py-5 px-10 mt-20 shadow-lg mb-3">
+            <p class="text-gray-700 text-lg font-bold mb-3">Welcome joseph</p>
+            <p class="text-gray-700 mb-1">Here's a quick overview of your progress and upcoming task.</p>
+        </div>
+        <div class="flex gap-6 flex-wrap">
+            <div class="w-[40%] bg-slate-100 mt-4 px-8 py-5 shadow-lg">
+                <p class="text-gray-700 text-lg font-bold mb-4">your progress</p>
+                <div class="bg-gray-300 h-4 w-[95%]">
+                    <div class="bg-blue-500 h-4 w-[40%] "></div>
+                </div>
+                <p class="text-gray-700 mt-2 mb-12">40% completed towards ur next goal!</p>
+            </div>
+            <div class="w-[40%] bg-slate-100 mt-4 px-8 py-5 shadow-lg">
+                <p class="text-gray-700 text-lg font-bold mb-3">Upcoming Activities</p>
+                <p class="text-gray-700 mb-2">Lesson 5: Advance Grammer - Dec 15</p>
+                <p class="text-gray-700 mb-2">Speaking Practice: Pronounciation - 16</p>
+                <p class="text-gray-700">Quiz: Vocabulary Challenge - Dec 18</p>
+                
+            </div>
+            <div class="w-[40%] bg-slate-100 mt-2 px-8 py-5 shadow-lg">
+                <p class="text-gray-700 text-lg font-bold mb-3">Recent Achievement</p>
+                <p class="text-gray-700 mb-2">Complete Lesson 4: Basic Tense</p>
+                <p class="text-gray-700 mb-2">Archieved Perfect Score in Quiz 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
