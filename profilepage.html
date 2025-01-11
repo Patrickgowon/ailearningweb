@@ -13,7 +13,7 @@
     <div class="bg-white top-0 px-4 w-[100%] h-15 shadow-xl flex justify-between items-center fixed z-100 ">
         <div class="flex gap-3 items-center py-3 container">
              <p class="text-2xl font-bold text-gray-700">Ai Tutor</p>
-             <i class="fas fa-bars text-2xl text-gray-700 bars lg:hidden"></i>
+             <i onclick=toggleMenu() class="fas fa-bars text-2xl text-gray-700 bars lg:hidden"></i>
         </div>
         <div class="flex gap-5 w-5/12 items-center">
              <input type="text" placeholder="Search Here...." class="my-1 w-full rounded px-2 ring-1" >
@@ -23,9 +23,9 @@
              </div>
         </div>    
     </div>
-    <div class="flex w-full bg-gray-100 ">
-        <div class="mt-20 lg:w-[25%] relative hidden lg:block">
-            <div class="h-full  px-4 bg-white w-[25%] fixed">
+    <div class="sm:flex  w-full bg-gray-100 ">
+        <div id="menu" class="mt-16 lg:w-[25%] w-full relative lg:block hidden">
+            <div class="h-full  px-4 bg-white w-full sm:w-[25%] fixed">
                 <p class="mt-4 text-gray-700 font-bold">Patrickgowon@gmail.com</p>
                 <ul class="flex flex-col gap-6 mt-6">
                     <li><i class="fas fa-home text-slate-600 "></i><a href="dashboard.html" class="text-slate-700"> Dashboard Overview</a></li>
@@ -90,5 +90,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const menuBar = document.getElementById("menu");
+        const toggleMenu = () =>{
+            menuBar.classList.toggle("hidden");
+        }
+    </script>
 </body>
 </html>

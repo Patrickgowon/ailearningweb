@@ -15,7 +15,7 @@
     <div class="bg-white top-0 px-4 w-[100%] h-15 shadow-xl flex justify-between items-center fixed ">
        <div class="flex gap-3 items-center py-3 container">
             <p class="text-2xl font-bold text-gray-700">Ai Tutor</p>
-            <i class="fas fa-bars text-2xl text-gray-700 bars md:hidden"></i>
+            <i onclick=toggleMenu() class="fas fa-bars text-2xl text-gray-700 bars md:hidden"></i>
        </div>
        <div class="flex gap-5 w-5/12 items-center">
             <input type="text" placeholder="Search Here...." class="my-1 w-full rounded px-2 ring-1" >
@@ -25,7 +25,7 @@
             </div>
        </div>
     </div>
-    <div class="w-[50%] h-[100vh] bg-white absolute z-[100] px-4  hidden">
+    <div id="menu" class="sm:w-[50%] h-[100vh] bg-white w-full  z-[100] px-4 hidden fixed">
         <p class="mt-4 text-gray-700 font-bold">Patrickgowon@gmail.com</p>
         <ul class="flex flex-col gap-6 mt-6">
             <li><i class="fas fa-home text-slate-600 "></i><a href="dashboard.html" class="text-slate-700"> Dashboard Overview</a></li>
@@ -333,6 +333,11 @@
             </div>
         </div>
     </div>
-    <script src="javascript.js"></script>
+    <script>
+        const menuBar = document.getElementById("menu");
+        const toggleMenu = () =>{
+            menuBar.classList.toggle("hidden");
+        }
+    </script>
 </body>
 </html>
